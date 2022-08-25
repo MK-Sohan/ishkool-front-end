@@ -7,37 +7,36 @@ import { GiChessKing } from "react-icons/gi";
 import svg from "../../image/certificate-1356.png";
 const LeaderBoard = () => {
   return (
-    <div>
-      <div className="leaderboard">
+    <div className="leaderboard ">
+      <div className="hr2">
+        <hr />
+      </div>
+      <div className="">
         <Heading subtitle="Leaderboard" title=" our top students" />
         <div className="parant-container">
-          <div>
+          <div className="leaderboard-maincontainer">
             <h2 className="tittle">Top Gainers</h2>
-            <div className="leaderboard-maincontainer">
-              {topStudents.slice(0, 3).map((student) => (
-                <div className="leaderboard-main">
-                  <div className="topstudent-image">
-                    <div
-                      className={`color-box ${student.rank == 1 && "first"}`}
-                    >
-                      <span className="rank">{student.rank}</span>
-                      <img src={student.image} alt="" />
-                    </div>
-                    <h3>{student.name}</h3>
-                    <p className="email">{student.email}</p>
+            {topStudents.slice(0, 3).map((student) => (
+              <div className="leaderboard-main">
+                <div className="topstudent-image">
+                  <div className={`color-box ${student.rank == 1 && "first"}`}>
+                    <span className="rank">{student.rank}</span>
+                    <img src={student.image} alt="" />
                   </div>
-                  <div className="hr" />
-                  <div className="topstudent-location">
-                    <div className="location">
-                      <MdLocationOn /> {student.location}
-                    </div>
-                    <div>
-                      <button className="location-button"> Congratulate</button>
-                    </div>
+                  <h3>{student.name}</h3>
+                  <p className="email">{student.email}</p>
+                </div>
+                <div className="hr" />
+                <div className="topstudent-location">
+                  <div className="location">
+                    <MdLocationOn /> {student.location}
+                  </div>
+                  <div>
+                    <button className="location-button"> Congratulate</button>
                   </div>
                 </div>
-              ))}
-            </div>
+              </div>
+            ))}
           </div>
 
           <div className="parentstudent-table  ">
@@ -72,6 +71,9 @@ const LeaderBoard = () => {
             ))}
           </div>
         </div>
+      </div>
+      <div className=" hr2">
+        <hr />
       </div>
     </div>
   );

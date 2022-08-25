@@ -11,12 +11,18 @@ const OurTeachers = () => {
   return (
     <>
       <section className="homeAbout container">
-        <div className="">
+        <OnlineCourses />
+
+        <div className="our-teachers1">
+          <div className="hr2">
+            <hr />
+          </div>
+
           <Heading subtitle="Our Teachers" title=" our top rated teachers" />
 
           <div className="coursesCard">
             {/* copy code form  coursesCard */}
-            <div className="grid2 our-teachers">
+            <div className="grid2 ">
               {coursesCard.slice(0, 4).map((val) => (
                 <div className="items">
                   <div className="content flex">
@@ -60,7 +66,6 @@ const OurTeachers = () => {
             </div>
           </div>
         </div>
-        <OnlineCourses />
       </section>
     </>
   );

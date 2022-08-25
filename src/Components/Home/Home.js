@@ -11,8 +11,11 @@ import OurTeachers from "./PopularCourse/OurTeachers";
 const Home = () => {
   return (
     <div>
-      <Navbar></Navbar>
-      <Banner></Banner>
+      <section className="hero-parent">
+        <Navbar></Navbar>
+        <Banner></Banner>
+      </section>
+
       <JoinUs />
       <OurTeachers></OurTeachers>
       <LeaderBoard></LeaderBoard>

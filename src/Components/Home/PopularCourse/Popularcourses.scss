@@ -1,11 +1,14 @@
 @import '../../Variables/Variables.scss';
 .homeAbout{
-  padding: 100px 20px 40px 40px;
-  
+  // padding: 100px 20px 40px 40px;
+  // padding-top: 50px;
   
 }
+.our-teachers1{
+  padding-top: 40px;
+}
 .sbcontent{
-  padding-top: 100px;
+  
 }
 .coursesCard {
    
@@ -32,12 +35,14 @@
       margin-left: 15px;
       text-align: left;
       h1 {
-        font-size: 30px;
+        font-size: 1.5625vw;
         font-weight: 500;
         line-height: 45px;
       }
       
-      
+      p{
+        font-size: 1vw; 
+      }
     }
     .rate {
       margin: 20px 0;
@@ -77,7 +82,7 @@
   .per-hours{
         margin-top: 10px;
         font-weight: 500;
-        font-size: 15px;
+        font-size:  0.78125vw;
         color: #1eb2a6;
         border-radius: 5px;
       }
@@ -114,7 +119,7 @@
   /*-------------online---------*/
   .online {
     text-align: center;
-    padding-top:100px ;
+    padding-top:40px ;
  
     .box {
       box-shadow: 0 5px 25px -2px rgba(0, 0, 0, 0.06);
@@ -147,7 +152,7 @@
   }
 
   .our-teachers{
-    margin-top: 100px;
+    margin-top: 60px;
    
   }
   

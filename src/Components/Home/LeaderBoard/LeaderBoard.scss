@@ -10,21 +10,17 @@
 
 }
 .parentstudent-table{
-    // border: solid;
+   
    
 }
 .leaderboard{
-    padding-top: 100px;
-    // height: 1600px;
+    padding-top: 40px;
+    width: 100%;
 }
 .parant-container{
     display: flex;
     justify-content: center;
-    gap: 120px;
-   
-    
-   
-    // width: 90rem;
+    gap: 4.7rem;
     
 }
 .topstudent-image {
@@ -79,7 +75,7 @@ color: white;
     border: none;
     padding: 6px;
     background:none ;
-    font-size: 15px;
+    font-size:  0.78125vw;
     
 
     justify-self: center;
@@ -97,17 +93,18 @@ color: white;
     justify-self: center;
     
 }
-
+.hr2{
+    margin-top: 100px;
+}
 .leaderboard-maincontainer{
     display: flex;
     flex-direction: column;
-//    border: solid;
-   flex-grow: 1;
-    // justify-content: center;
-    // align-items: center;
-    margin-top: 60px;
-    width: 100%;
-    gap: 4.7rem;
+    justify-content: space-between;
+   flex: 0 1 20rem;
+   padding-top: 50px;
+   
+    
+   
    
 }
 .first{
@@ -116,20 +113,24 @@ color: white;
 .leaderboard-main{
     display: flex;
     flex-direction: column;
-  width:20rem;
-    //  width: 100%;
-    //  border: solid;
+  
+    
 
 background: #ffffff;
 box-shadow:  21px 21px 41px #dedede,
              -21px -21px 41px #ffffff;
 
     border-radius: 5px;
-    overflow: hidden;
+    
+}
+.leaderboard-maincontainer {
+    position: relative;
+   
 }
 .tittle{
-    max-width: 63rem;
-    margin: 80px 0px  auto;
+   z-index: 50;
+   position: absolute;
+   top: 0;
 }
 .badge{
     font-size: 23px;
@@ -137,7 +138,8 @@ box-shadow:  21px 21px 41px #dedede,
 }
 .tittle-2{
     max-width: 63rem;
-    margin: 70px auto;
+    // margin: 70px auto;
+    margin-bottom: 15px;
 }
 .student-table{
        border-radius: 10px;
@@ -147,7 +149,7 @@ box-shadow:  21px 21px 41px #dedede,
        box-shadow:  21px 21px 41px #dedede;
         
     display: grid;
-    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-columns: 4fr 2fr 1fr;
     gap: 0px 50px;
     align-items: center;
     
@@ -156,7 +158,7 @@ box-shadow:  21px 21px 41px #dedede,
     .head{
     
         color: black;
-     
+     font-size: 1vw;
        
     }
     .image-head{
@@ -164,6 +166,9 @@ box-shadow:  21px 21px 41px #dedede,
         gap: 0 10px;
         
         align-items: center;
+        p{
+            font-size: 1vw; 
+        }
     }
     .head img{
         object-fit: cover;
@@ -286,6 +291,9 @@ box-shadow:  21px 21px 41px #dedede,
 
 
 @media only screen and (min-device-width : 720px) and (max-device-width : 1280px){
+    .parant-container{
+        flex-direction: column;
+    }
     .head{
         font-size: 25px;
       
@@ -306,15 +314,20 @@ box-shadow:  21px 21px 41px #dedede,
     }
     .student-table{
         padding: 0px 19px;
+        grid-template-columns: 4fr 1fr 1fr;
     }
     .leaderboard-maincontainer{
         display: flex;
-        
+        padding-top: 40px;
         justify-content: center;
+        flex-direction: row;
         width: 100%;
-        padding: 0 5px;
+        // padding: 0 5px;
         gap: 1.5rem;
-       
+      .tittle{
+        flex: 0 0 100%;
+
+      } 
     }
     .studenttable-main{
         padding: 0 10px;

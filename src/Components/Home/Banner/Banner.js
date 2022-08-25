@@ -6,7 +6,7 @@ const Banner = () => {
   return (
     <>
       <section className="hero">
-        <div className="container">
+        <div className="">
           <div className="row">
             <h4>WELCOME TO ISHKOOL</h4>
             <h1 className="logo">Best Online Education Expertise</h1>
@@ -29,7 +29,6 @@ const Banner = () => {
           </div>
         </div>
       </section>
-      <div className="margin"></div>
     </>
   );
 };

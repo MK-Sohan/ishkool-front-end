@@ -22,7 +22,7 @@ body {
 }
 /*------------global-----------*/
 .container {
-  max-width: 85%;
+  max-width: 85vw;
   margin:0 auto;
 }
 .flexSB {
@@ -177,16 +177,18 @@ p {
   background-color: #fff;
 }
 @media screen and (max-width: 768px) {
-  .grid2,
-  .grid3,
-  .grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .back {
-    background-position: center;
-    padding-top: 50%;
-    height: 80vh;
-  }
+  // .grid2,
+  // .grid3,
+  // .grid {
+  //   grid-template-columns: repeat(1, 1fr);
+  //   justify-items: center;
+  //   align-items: center;
+  // }
+  // .back {
+  //   background-position: center;
+  //   padding-top: 50%;
+  //   height: 80vh;
+  // }
 }
 
 @media only screen and(max-width:644px){
@@ -201,17 +203,15 @@ p {
     grid-gap: 30px;
   }
   .grid {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 30px;
+    display: flex;
+    flex-direction: column;
+   
   }
   .flexSB {
     display: grid;
     grid-template-columns: repeat(1,1fr);
   }
-  .row {
-    width: 100%;
-  }
+  
   .flex-2{
     display: flex;
     flex-direction: column;
@@ -234,6 +234,14 @@ p {
     // justify-content: center;
    
   }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+  .container{
+    max-width: 85%;
+  }
   .grid3 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -242,4 +250,10 @@ p {
   .container{
     padding: 20px 0px;
   }
+}
+@media only screen and (max-width: 992px) {
+.grid{
+  grid-template-columns: repeat(2, 1fr);
+}
+
 }

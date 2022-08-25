@@ -12,6 +12,9 @@ const OnlineCourses = () => {
   return (
     <>
       <section className=" " id="course">
+        <div className="hr2">
+          <hr />
+        </div>
         <div className="online">
           <Heading subtitle="COURSES" title=" Online Courses" />
           <div className="content sbcontent grid3">
