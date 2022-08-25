@@ -17,9 +17,11 @@
 }
 .leaderboard{
     padding-top: 40px;
-    width: 100%;
+    max-width: 85%;
+    margin: 0 auto;
 }
 .parant-container{
+
     display: flex;
     justify-content: center;
     gap: 4.7rem;

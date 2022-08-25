@@ -12,6 +12,21 @@ body {
 // .head{
 //   margin-top: 10px;
 // }
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: royalblue;
+  border-radius: 10px;
+}
 .logo{
   color: white;
   font-size: 35px;
