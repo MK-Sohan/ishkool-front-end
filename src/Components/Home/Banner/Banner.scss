@@ -1,0 +1,82 @@
+@import '../../Variables/Variables.scss';
+
+.hero {
+    background-image: url("../../../../public//Images/main-bg.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100vh;
+    padding-top: 20%;
+    padding-right: 50px;
+    color: $whitecolor;
+      h3 {
+      color:$whitecolor;
+    }
+     #heading {
+      text-align: left;
+      margin: 0;
+      padding: 0;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .margin {
+      height: 40vh;
+    }
+    .hero {
+      background-position: right;
+      padding-top: 50%;
+      height: 80vh;
+    }
+    .hero .row {
+      width: 100%;
+    }
+  }
+  @media only screen and (max-width: 644px) {
+    .margin {
+      height: 40vh;
+    }
+    .hero {
+      background-position: right;
+      padding-top: 70%;
+      height: auto;
+    }
+    .hero .row {
+      width: 100%;
+    }
+  }
+  @media only screen and (min-device-width : 720px) and (max-device-width : 1280px){
+
+    .margin {
+      height: 40vh;
+    }
+    .hero {
+      background-position: right;
+      padding-top: 60%;
+      height: auto;
+      height: 80vh;
+    }
+    .hero .row {
+      width: 100%;
+      h4{
+        font-size: 25px;
+      }
+      h1{
+        font-size: 55px;
+        margin-top: 10px;
+      }
+      p{
+        font-size: 30px;
+        margin-top: 10px;
+      }
+    }
+    .button{
+      button{
+        font-size: 25px;
+      }
+    }
+  }

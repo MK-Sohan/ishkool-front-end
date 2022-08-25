@@ -1,0 +1,111 @@
+
+.back-top{
+    width: 50px;
+    height: 60px;
+    position: fixed;
+    bottom: 70px;
+    right: 50px;
+    border: none;
+    background-color:#00008bcd ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+   border-radius: 7px;
+    color: black;
+}
+.arrow{
+    font-size: 25px;
+    color: white;
+}
+.childback-top {
+    display: flex;
+    flex-direction: column;
+    
+}
+.bounce {
+    animation: bounce 2s infinite;
+    -webkit-animation: bounce 2s infinite;
+    -moz-animation: bounce 2s infinite;
+    -o-animation: bounce 2s infinite;
+  }
+  
+  .bounce:hover {
+    animation: none;
+    -webkit-animation: none;
+    -moz-animation: none;
+    -o-animation: none;
+  }
+  
+  @-webkit-keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+      -webkit-transform: translateY(0);
+    }
+  
+    40% {
+      -webkit-transform: translateY(-30px);
+    }
+  
+    60% {
+      -webkit-transform: translateY(-15px);
+    }
+  }
+  
+  @-moz-keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+      -moz-transform: translateY(0);
+    }
+  
+    40% {
+      -moz-transform: translateY(-30px);
+    }
+  
+    60% {
+      -moz-transform: translateY(-15px);
+    }
+  }
+  
+  @-o-keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+      -o-transform: translateY(0);
+    }
+  
+    40% {
+      -o-transform: translateY(-30px);
+    }
+  
+    60% {
+      -o-transform: translateY(-15px);
+    }
+  }
+  
+  @keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+      transform: translateY(0);
+    }
+  
+    40% {
+      transform: translateY(-30px);
+    }
+  
+    60% {
+      transform: translateY(-15px);
+    }
+  }
+  

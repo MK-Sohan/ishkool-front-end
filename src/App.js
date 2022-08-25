@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import { Route, Routes } from "react-router-dom";
+import "./App.scss";
+import BackTopBtn from "./Components/BackTopBtn/BackTopBtn";
+import CourseDetails from "./Components/CourseDetails/CourseDetails";
+import Footer from "./Components/Home/Footer/Footer";
+import Home from "./Components/Home/Home";
+import ScrollToTop from "./Components/ScrollToTop/ScrollTotop";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="overflow">
+      <ScrollToTop></ScrollToTop>
+      <Routes>
+        <Route path="/" element={<Home></Home>}></Route>
+        <Route
+          path="/course-details/:id"
+          element={<CourseDetails></CourseDetails>}
+        ></Route>
+      </Routes>
+      <BackTopBtn></BackTopBtn>
+      <Footer></Footer>
     </div>
   );
 }

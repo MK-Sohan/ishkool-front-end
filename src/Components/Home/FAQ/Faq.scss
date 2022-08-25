@@ -1,0 +1,164 @@
+summary {
+    font-size: 1.25rem;
+    font-weight: 600;
+    background-color: #fff;
+    color: #333;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    outline: none;
+    border-radius: 0.25rem;
+    text-align: left;
+    cursor: pointer;
+    position: relative;
+  }
+  details > summary::after {
+    position: absolute;
+    content: "+";
+    right: 20px;
+  }
+  details[open] > summary::after {
+    position: absolute;
+    content: "-";
+    right: 20px;
+  }
+  details > summary::-webkit-details-marker {
+    display: none;
+  }
+  details[open] summary ~ * {
+    animation: sweep .5s ease-in-out;
+  }
+  @keyframes sweep {
+    0%    {opacity: 0; margin-top: -10px}
+    100%  {opacity: 1; margin-top: 0px}
+  }
+  
+  .main-container{
+    display: flex;
+    justify-content: center;
+   gap: 50px;
+    .input-field{
+        width: 35%;
+     
+    }
+    margin-top: 100px;
+    margin-bottom: 150px;
+
+  }
+  .faq-maincontainer{
+    width: 45%;
+    height: 70vh;
+  }
+  .input-field{
+    // margin-top: 200px;
+    button{
+      margin-top: 10px;
+      font-weight: bold;
+    }
+  }
+  .input-1{
+    height: 50px;
+    width: 270px;
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid gray;
+  }
+  .text-area{
+    width:550px ;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid gray;
+  }
+  @media only screen and(max-width:644px) {
+    .faq-maincontainer{
+        width: 100%;
+        margin: 0 auto;
+        padding: 0px 10px;
+        height: 50vh;
+        margin-bottom: 100px;
+      }
+      .main-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        .input-field{
+          width: 100%;
+          padding: 10px;
+       
+          .input-1{
+            height: 50px;
+            width: 100%;
+          margin-top: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid gray;
+          }
+      }
+      .text-area{
+        width:100%;
+        margin-top: 20px;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid gray;
+      }
+        margin-bottom: 150px;
+    
+      }
+  }
+  @media only screen and (min-device-width : 720px) and (max-device-width : 1280px){
+
+    .faq-maincontainer{
+      width: 90%;
+      margin: 0 auto;
+      padding: 0px 10px;
+      height: 50vh;
+      margin-bottom: 100px;
+    }
+    .main-container{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      .input-field{
+        width: 80%;
+        padding: 10px;
+       
+     button{
+      width: 150px;
+      height: 50px;
+      font-size: 25px;
+     }
+        .input-1{
+          height: 70px;
+          width: 100%;
+        margin-top: 10px;
+          padding: 10px;
+          border-radius: 5px;
+          border: 1px solid gray;
+          font-size: 25px;
+          
+        }
+        .input-1::placeholder{
+          font-size: 25px;
+        }
+    }
+    .text-area{
+      width:100%;
+      margin-top: 20px;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid gray;
+      font-size: 25px;
+    }
+    .text-area::placeholder{
+      font-size: 25px;
+    }
+      margin-bottom: 10px;
+  
+    }
+
+  }

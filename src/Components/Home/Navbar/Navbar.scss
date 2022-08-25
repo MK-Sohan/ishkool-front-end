@@ -1,0 +1,128 @@
+@import '../../Variables/Variables.scss';
+/*--------head------------*/
+
+.head {
+    padding: 20px 0;
+    color: $whitecolor;
+  }
+  .logo h1 {
+    font-size: 35px;
+    font-weight: 900;
+  }
+  .head .icon {
+    margin-left: 10px;
+  }
+  /*--------head------------*/
+  /*--------header------------*/
+  header {
+    background-color: $backgroundColor;
+    margin: 0 30px;
+    header .nav {
+      display: flex !important;
+    }
+    li {
+      margin-right: 40px;
+    }
+     ul {
+      padding: 30px 20px;
+    }
+     ul li a {
+      color: $whitecolor;
+      font-weight: 500;
+      transition: 0.5s;
+    }
+     ul li a:hover {
+      color: #FEE39F;
+    }
+    .start {
+      background-color: white;
+      padding: 0px 70px;
+      color: $whitecolor;
+      clip-path: polygon(10% 0%, 100% 0, 100% 100%, 0% 100%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .logo{
+        // height: 10px;
+      
+      }
+      .logo img{
+        height: 50px;
+
+      }
+    }
+    .toggle {
+      display: none;
+    }
+  }
+  
+
+  
+  /*--------header------------*/
+  @media screen and (max-width: 768px) {
+    .start {
+      clip-path: none;
+    }
+    header {
+      margin: 0;
+      background-color: $greencolor;
+      position: relative;
+       ul.flexSB {
+        display: none;
+      }
+       ul li {
+        margin-bottom: 20px;
+      }
+      .toggle {
+        display: block;
+        background: none;
+        color: $whitecolor;
+        font-size: 30px;
+        position: absolute;
+        right: 0;
+        top: -30px;
+      }
+      .mobile-nav {
+        position: absolute;
+        top: 7vh;
+        left: 0;
+        width: 100%;
+        background-color: $greencolor;
+      }
+    }
+    
+  }
+  @media only screen and (max-width: 644px) {
+    .start {
+      background-color: $greencolor;
+      
+      color: $whitecolor;
+      clip-path: polygon(10% 0%, 100% 0, 100% 100%, 0% 100%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .logo{
+       margin-right: 300px;
+       display: flex;
+    
+       justify-content: center;
+       padding: 10px 0px;
+      
+      }
+      .logo img{
+        height: 50px;
+
+      }
+    }
+    
+  }
+  @media only screen and (min-device-width : 720px) and (max-device-width : 1280px){
+
+    header {
+    
+       ul li a{
+      font-size: 24px;
+      }
+    }
+
+  }
