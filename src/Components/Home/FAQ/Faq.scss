@@ -31,9 +31,7 @@ summary {
     0%    {opacity: 0; margin-top: -10px}
     100%  {opacity: 1; margin-top: 0px}
   }
-  .parant-container{
-
-  }
+ 
   .main-container{
     padding-top: 40px;
     display: flex;
@@ -41,11 +39,6 @@ summary {
     align-items: center;
     justify-content: center;
    gap: 50px;
-    .input-field{
-        // width: 5%;
-     
-    }
-   
 
   }
   .faq-maincontainer{
@@ -54,7 +47,6 @@ summary {
     height: 70vh;
   }
   .input-field{
-    // margin-top: 200px;
     button{
       margin-top: 10px;
       font-weight: bold;

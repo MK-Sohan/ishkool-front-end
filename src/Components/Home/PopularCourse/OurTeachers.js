@@ -28,7 +28,9 @@ const OurTeachers = () => {
                   <div className="content flex">
                     <div className="text">
                       <h1>{val.coursesName}</h1>
-                      <p>{val.org}</p>
+                      <div className="org-name">
+                        <p>{val.org}</p>
+                      </div>
                       <div className="rate">
                         <FaStar />
                         <FaStar />

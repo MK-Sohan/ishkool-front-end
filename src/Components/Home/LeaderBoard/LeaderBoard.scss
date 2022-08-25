@@ -9,9 +9,11 @@
     left: calc(50% - 35px);
 
 }
-.parentstudent-table{
-   
-   
+.student-name{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .leaderboard{
     padding-top: 40px;
@@ -167,7 +169,7 @@ box-shadow:  21px 21px 41px #dedede,
         
         align-items: center;
         p{
-            font-size: 1vw; 
+            font-size: 18px; 
         }
     }
     .head img{

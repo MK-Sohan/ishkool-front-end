@@ -8,7 +8,7 @@ import svg from "../../image/certificate-1356.png";
 const LeaderBoard = () => {
   return (
     <div className="leaderboard ">
-      <div className="hr2">
+      <div className="hr2 container">
         <hr />
       </div>
       <div className="">
@@ -72,7 +72,7 @@ const LeaderBoard = () => {
           </div>
         </div>
       </div>
-      <div className=" hr2">
+      <div className=" hr2 container">
         <hr />
       </div>
     </div>
