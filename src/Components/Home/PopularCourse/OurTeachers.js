@@ -17,14 +17,25 @@ const OurTeachers = () => {
           <div className="hr2">
             <hr />
           </div>
-
-          <Heading subtitle="Our Teachers" title=" our top rated teachers" />
+          <div
+            data-aos="zoom-out"
+            data-aos-easing="linear"
+            data-aos-duration="1000"
+          >
+            {" "}
+            <Heading subtitle="Our Teachers" title=" our top rated teachers" />
+          </div>
 
           <div className="coursesCard">
             {/* copy code form  coursesCard */}
             <div className="grid2 ">
               {coursesCard.slice(0, 4).map((val) => (
-                <div className="items">
+                <div
+                  data-aos="flip-right"
+                  data-aos-easing="linear"
+                  data-aos-duration="1500"
+                  className="items"
+                >
                   <div className="content flex">
                     <div className="text">
                       <h1>{val.coursesName}</h1>

@@ -6,12 +6,22 @@ const TopHead = () => {
     <>
       <section className="head">
         <div className="container flexSB">
-          <div className="">
+          <div
+            data-aos="fade-right"
+            data-aos-easing="linear"
+            data-aos-duration="1000"
+            className=""
+          >
             <h1 className="logo">ISHKOOL</h1>
             <span className="sub-logo">ONLINE EDUCATION & LEARNING</span>
           </div>
 
-          <div className="social">
+          <div
+            data-aos="fade-left"
+            data-aos-easing="linear"
+            data-aos-duration="1000"
+            className="social"
+          >
             <FaFacebook className="icon"></FaFacebook>{" "}
             <FaInstagram className="icon"></FaInstagram>
             <FaTwitter className="icon"></FaTwitter>

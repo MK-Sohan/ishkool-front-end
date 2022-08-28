@@ -14,7 +14,7 @@ body {
 // }
 /* width */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 8px;
 }
 
 /* Track */
@@ -24,7 +24,7 @@ body {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: royalblue;
+  background: rgb(232, 233, 237);
   border-radius: 10px;
 }
 .logo{

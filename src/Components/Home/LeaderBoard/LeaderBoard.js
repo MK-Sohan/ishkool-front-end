@@ -12,9 +12,20 @@ const LeaderBoard = () => {
         <hr />
       </div>
       <div className="">
-        <Heading subtitle="Leaderboard" title=" our top students" />
+        <div
+          data-aos="zoom-out"
+          data-aos-easing="linear"
+          data-aos-duration="1000"
+        >
+          <Heading subtitle="Leaderboard" title=" our top students" />
+        </div>
         <div className="parant-container">
-          <div className="leaderboard-maincontainer">
+          <div
+            data-aos="fade-right"
+            data-aos-easing="linear"
+            data-aos-duration="1000"
+            className="leaderboard-maincontainer"
+          >
             <h2 className="tittle">Top Gainers</h2>
             {topStudents.slice(0, 3).map((student) => (
               <div className="leaderboard-main">
@@ -39,7 +50,12 @@ const LeaderBoard = () => {
             ))}
           </div>
 
-          <div className="parentstudent-table  ">
+          <div
+            data-aos="fade-left"
+            data-aos-easing="linear"
+            data-aos-duration="1000"
+            className="parentstudent-table  "
+          >
             <h2 className="tittle-2">Top 5 Students</h2>
             <section className="student-table student-table-2">
               <div className="head">Rank</div>

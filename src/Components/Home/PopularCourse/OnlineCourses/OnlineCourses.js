@@ -16,10 +16,21 @@ const OnlineCourses = () => {
           <hr />
         </div>
         <div className="online">
-          <Heading subtitle="COURSES" title=" Online Courses" />
-          <div className="content sbcontent grid3">
+          <div
+            data-aos="zoom-out"
+            data-aos-easing="linear"
+            data-aos-duration="1000"
+          >
+            <Heading subtitle="COURSES" title=" Online Courses" />
+          </div>
+          <div data-aos="fade-left" className="content sbcontent grid3">
             {online.map((val) => (
-              <div className="box">
+              <div
+                data-aos="flip-right"
+                data-aos-easing="linear"
+                data-aos-duration="1500"
+                className="box"
+              >
                 <div className="img course-image">
                   <img src={val.cover} />
                   <img src={val.hoverCover} alt="" className="show" />

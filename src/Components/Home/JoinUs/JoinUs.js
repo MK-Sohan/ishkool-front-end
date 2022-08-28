@@ -6,10 +6,20 @@ const JoinUs = () => {
   return (
     <div className="joinwith-us">
       {" "}
-      <Heading subtitle="Join Us" title="Join With Us" />
+      <div
+        data-aos="zoom-out"
+        data-aos-easing="linear"
+        data-aos-duration="1000"
+      >
+        {" "}
+        <Heading subtitle="Join Us" title="Join With Us" />
+      </div>
       <div className="container grid ">
         {joinwithus.map((item) => (
           <div
+            data-aos="flip-up"
+            data-aos-easing="linear"
+            data-aos-duration="1500"
             class="card"
             style={{
               backgroundImage: `url(${item.image})`,

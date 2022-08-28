@@ -6,36 +6,53 @@ const FAQ = () => {
   return (
     <div className="main-container">
       <div className="input-field">
-        <Heading subtitle="Contact" title="Contact Us" />
-        <input
-          required
-          placeholder="Enter your Name"
-          className="input-1"
-          type="text"
-        />
-        <input
-          required
-          placeholder="Enter your Email"
-          className="input-1"
-          type="email"
-        />{" "}
-        <br />
-        <textarea
-          required
-          placeholder="Description"
-          className="text-area"
-          name=""
-          id=""
-          cols="30"
-          rows="10"
-        ></textarea>{" "}
-        <br />
-        <button className="table-button" type="submit">
-          Submit
-        </button>
+        <div
+          data-aos="zoom-out"
+          data-aos-easing="linear"
+          data-aos-duration="1000"
+        >
+          <Heading subtitle="Contact" title="Contact Us" />
+        </div>
+        <form
+          data-aos="zoom-out-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="1000"
+        >
+          <input
+            required
+            placeholder="Enter your Name"
+            className="input-1"
+            type="text"
+          />
+          <input
+            required
+            placeholder="Enter your Email"
+            className="input-1"
+            type="email"
+          />{" "}
+          <br />
+          <textarea
+            required
+            placeholder="Description"
+            className="text-area"
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+          ></textarea>{" "}
+          <br />
+          <button className="table-button" type="submit">
+            Submit
+          </button>
+        </form>
       </div>
 
-      <div className="faq-maincontainer">
+      <div
+        data-aos="zoom-out-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="1000"
+        className="faq-maincontainer"
+      >
         <Heading subtitle="FAQ" title="Frequently Ask Question" />
         <details open>
           <summary>FAQ 1</summary>
