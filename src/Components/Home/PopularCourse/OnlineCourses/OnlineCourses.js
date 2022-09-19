@@ -1,9 +1,9 @@
 import React from "react";
-import Heading from "../../../Heading/Heading";
 import { online } from "../../../../dummydata";
 import { useNavigate } from "react-router-dom";
 import Tippy from "@tippyjs/react";
 import "tippy.js/dist/tippy.css"; // optional
+import Heading from "../../../Heading/Heading";
 const OnlineCourses = () => {
   const navigate = useNavigate();
   const handleDetails = (id) => {

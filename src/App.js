@@ -18,7 +18,7 @@ function App() {
         ></Route>
       </Routes>
       <BackTopBtn></BackTopBtn>
-      <Footer></Footer>
+      {/* <Footer></Footer> */}
     </div>
   );
 }

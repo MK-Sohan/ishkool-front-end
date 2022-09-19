@@ -1,4 +1,5 @@
 import React from "react";
+import Fortest from "../Fortesst/Fortest";
 
 import Banner from "./Banner/Banner";
 import FAQ from "./FAQ/FAQ";
@@ -11,7 +12,7 @@ import OurTeachers from "./PopularCourse/OurTeachers";
 const Home = () => {
   return (
     <div>
-      <section className="hero-parent">
+      {/* <section className="hero-parent">
         <Navbar></Navbar>
         <Banner></Banner>
       </section>
@@ -20,7 +21,10 @@ const Home = () => {
       <OurTeachers></OurTeachers>
       <LeaderBoard></LeaderBoard>
 
-      <FAQ />
+      
+      <FAQ /> */}
+
+      <Fortest />
     </div>
   );
 };
